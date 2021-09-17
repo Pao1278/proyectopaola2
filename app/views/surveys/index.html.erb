@@ -1,0 +1,75 @@
+<div class="btn-group mt-4" style="width:100%"
+    role="group" aria-label="Basic example">
+  <button type="button" class="btn">
+    <i class="fas fa-heart"></i>
+  </button>
+  <button type="button" class="btn">
+    <i class="far fa-thumbs-up"></i>
+  </button>
+  <button type="button" class="btn">
+    <i class="far fa-smile"></i>
+  </button>
+  <button type="button" class="btn">
+    <i class="far fa-frown"></i>
+  </button>
+  </div>
+  <div class="btn-group mb-4" style="width:100%"
+    role="group" aria-label="Basic example">
+    <button type="button" id="heart"
+      class="btn btn-lg">
+      <%= @nhearts %>
+    </button>
+    <button type="button" id="like"
+      class="btn btn-lg">
+      <%= @nlikes %>
+    </button>
+    <button type="button" id="smile"
+      class="btn btn-lg">
+      <%= @nhappies %>
+    </button>
+    <button type="button" id="frown"
+      class="btn btn-lg">
+      <%= @nfrowns %>
+    </button>
+  </div>
+  <div class="card" >
+    <div class="card-body">
+      <div class="row text-center">
+        <div style="font-size: 3em;"
+            class="col">
+            <a href="/surveys/create/?gesture=heart"
+              class="text-danger"><i class="fas fa-heart"></i>
+            </a>
+        </div>
+        <div style="font-size: 3em;" class="col">
+          <a href="/surveys/create/?gesture=smile"
+            class="text-warning"><i class="far fa-smile"></i>
+          </a>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div style="font-size: 3em;" class="col">
+          <a href="/surveys/create/?gesture=like"
+          ><i class="far fa-thumbs-up"></i>
+          </a>
+      </div>
+      <div style="font-size: 3em;" class="col">
+        <a href="/surveys/create/?gesture=frown"
+          class="text-dark"><i class="far fa-frown"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+ 
+
+
+
+
+
